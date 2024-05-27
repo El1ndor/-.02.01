@@ -1,0 +1,56 @@
+﻿<Page x:Class="WpfAccess185_2.Pages.GoodsPage"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:local="clr-namespace:WpfAccess185_2.Pages"
+mc:Ignorable="d"
+d:DesignHeight="450" d:DesignWidth="800"
+Title="Товары" IsVisibleChanged="PageIsVisibleChanged"
+Style="{StaticResource base_page}">
+<Grid>
+<DataGrid Margin="0 30 0 40" x:Name="DgGood" AutoGenerateColumns="False"
+CanUserAddRows="False"
+SelectionMode="Single" RowHeight="60">
+<DataGrid.Columns>
+<DataGridTextColumn IsReadOnly="True" Header="Наименование"
+Binding="{Binding GoodName}" Width="4*"/>
+<DataGridTextColumn Header="Цена" IsReadOnly="True"
+Binding="{Binding Price, StringFormat='c',
+ConverterCulture='ru-RU'}" Width="*"/>
+<DataGridTextColumn Header="Описание" IsReadOnly="True"
+Binding="{Binding Description}" Width="5*" />
+<DataGridComboBoxColumn x:Name="colCategories" Header="Категория товара"
+SelectedValueBinding="{Binding CategoryId}"
+DisplayMemberPath="CategoryName"
+SelectedValuePath="CategoryId" Width="2*"/>
+<DataGridTemplateColumn Width="70" Header="Фотография">
+<DataGridTemplateColumn.CellTemplate>
+<DataTemplate>
+<Image Source="{Binding Path=GetPhoto}"
+Stretch="Uniform" MaxHeight="50"/>
+</DataTemplate>
+</DataGridTemplateColumn.CellTemplate>
+</DataGridTemplateColumn>
+<DataGridTemplateColumn Width="2*" Header="Редактировать">
+<DataGridTemplateColumn.CellTemplate>
+<DataTemplate>
+<Button x:Name="BtnEdit" Content="..." Padding="3"
+Width="40" Style="{StaticResource base_button}"
+Click="BtnEditClick"/>
+</DataTemplate>
+</DataGridTemplateColumn.CellTemplate>
+</DataGridTemplateColumn>
+</DataGrid.Columns>
+</DataGrid>
+<StackPanel Orientation="Horizontal"
+VerticalAlignment="Bottom"
+HorizontalAlignment="Center"
+Height="40">
+<Button x:Name="BtnAdd" Content="Добавить"
+Click="BtnAddClick" Style="{StaticResource base_button}"/>
+<Button x:Name="BtnDelete" Content="Удалить"
+Click="BtnDeleteClick" Style="{StaticResource base_button}"/>
+</StackPanel>
+</Grid>
+</Page>

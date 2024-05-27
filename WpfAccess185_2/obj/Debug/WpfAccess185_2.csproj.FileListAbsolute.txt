@@ -1,0 +1,90 @@
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.AssemblyReference.cache
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\LoginWindow.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\MainWindow.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\AddGoodPage.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\CatalogOfGoodsPage.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\GoodsPage.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\StartPage.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2_MarkupCompile.cache
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2_MarkupCompile.lref
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\App.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\App.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.exe.config
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.exe
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\Newtonsoft.Json.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\SolrNet.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\System.ValueTuple.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\Newtonsoft.Json.xml
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\SolrNet.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\SolrNet.xml
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\System.ValueTuple.xml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Dictionary1.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\LoginWindow.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\MainWindow.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\AddGoodPage.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\CatalogOfGoodsPage.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\GoodsPage.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\StartPage.baml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.g.resources
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.Properties.Resources.resources
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.GenerateResource.cache
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.CoreCompileInputs.cache
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAcces.04EE0CCB.Up2Date
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.exe
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignColors.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.dll
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignColors.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.xml
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+I:\УП\по рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.xml
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\SellGoodsPage.g.cs
+I:\УП\по рекомнации\WpfAccess185_2\obj\Debug\Pages\SellGoodsPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.exe.config
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.exe
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\WpfAccess185_2.pdb
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignColors.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\Newtonsoft.Json.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\SolrNet.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\System.ValueTuple.dll
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignColors.pdb
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\MaterialDesignThemes.Wpf.xml
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\Microsoft.Xaml.Behaviors.xml
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\Newtonsoft.Json.xml
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\SolrNet.pdb
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\SolrNet.xml
+I:\УП\по_рекомнации\WpfAccess185_2\bin\Debug\System.ValueTuple.xml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.AssemblyReference.cache
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\App.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\LoginWindow.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\MainWindow.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\AddGoodPage.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\CatalogOfGoodsPage.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\GoodsPage.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\SellGoodsPage.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\StartPage.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\App.g.cs
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2_MarkupCompile.cache
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2_MarkupCompile.lref
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Dictionary1.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\LoginWindow.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\MainWindow.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\AddGoodPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\CatalogOfGoodsPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\GoodsPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\SellGoodsPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\Pages\StartPage.baml
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.g.resources
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.Properties.Resources.resources
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.GenerateResource.cache
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.csproj.CoreCompileInputs.cache
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAcces.04EE0CCB.Up2Date
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.exe
+I:\УП\по_рекомнации\WpfAccess185_2\obj\Debug\WpfAccess185_2.pdb

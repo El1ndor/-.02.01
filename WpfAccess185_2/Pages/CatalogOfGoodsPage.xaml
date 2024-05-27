@@ -1,0 +1,95 @@
+﻿<Page x:Class="WpfAccess185_2.Pages.CatalogOfGoodsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:WpfAccess185_2.Pages" 
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Каталог" 
+      Style="{StaticResource base_page}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите название для поиска:" Style="{StaticResource base_textblock}"/>
+                <TextBox Width="275" x:Name="TBoxSearch" Height="30" TextChanged="TBoxSearch_TextChanged" Style="{StaticResource base_textbox}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Выберите категорию" Style="{StaticResource base_textblock}" />
+                <ComboBox Width="275" Height="30" x:Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="CategoryName"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Сортировать по" Style="{StaticResource base_textblock}" />
+                <ComboBox Width="275" x:Name="ComboSort" Height="30" SelectionChanged="ComboSort_SelectionChanged">
+                    <ComboBoxItem Content="По названию" Tag="1"/>
+                    <ComboBoxItem Content="По категории" Tag="2"/>
+                    <ComboBoxItem Content="По возрастанию цены" Tag="3"/>
+                    <ComboBoxItem Content="По убыванию цены" Tag="4"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="В корзине " x:Name="TbCount" Style="{StaticResource base_textblock}"/>
+                <Button x:Name="BtnBuy" Content="Корзина" Click="BtnBuyClick" Height="Auto" Style="{StaticResource base_button}"/>
+            </StackPanel>
+        </WrapPanel>
+
+        <ListView x:Name="LViewGoods" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="20" Width="200">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="310" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Image Width="200" Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" Margin="5" Source="{Binding Path=GetPhoto}"/>
+                        <TextBlock Text="{Binding GoodName}" Grid.Row="2" Width="180" Padding="3" Height="50" TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Margin="5 5"/>
+                        <TextBlock Text="{Binding Price, StringFormat='c', ConverterCulture='ru-RU'}" Height="20" Grid.Row="3" TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="5 5"/>
+                        <Button x:Name="BtnEdit" Content="Купить" Click="BtnEdit_Click" Grid.Row="4" Style="{StaticResource base_button}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <materialDesign:DialogHost Grid.Row="1" x:Name="BuysWindow" BorderThickness="1" BorderBrush="Aqua" HorizontalAlignment="Center" VerticalAlignment="Center" CloseOnClickAway="True">
+            <materialDesign:DialogHost.DialogContent>
+                <StackPanel Margin="20">
+                    <ListBox x:Name="LbBuy" Grid.Row="2" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="400" Width="500" SelectedValuePath="Key">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Image Width="60" Height="60" Source="{Binding Path=Key.GetPhoto}" />
+                                    <StackPanel>
+                                        <TextBlock FontSize="14" Text="{Binding Path=Key.GoodName, StringFormat='Товар: {0}'}" Width="350" HorizontalAlignment="Left" />
+                                        <TextBlock FontSize="14" Text="{Binding Path=Key.Price, StringFormat='цена за шт.: {0:F2} руб.'}" Width="300" HorizontalAlignment="Left" />
+                                        <TextBlock FontSize="14" Text="{Binding Path=Value.Count, StringFormat='количество: {0}'}" Width="300" HorizontalAlignment="Left" />
+                                        <TextBlock FontSize="14" Text="{Binding Path=Value.Total, StringFormat='итого: {0:F2} руб.'}" Width="300" HorizontalAlignment="Left" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="BtnOk" Click="BtnOkClick" Content="Закрыть" Style="{StaticResource base_button}"/>
+                        <Button x:Name="BtnDelete" Content="Удалить" Click="BtnDeleteClick" Style="{StaticResource base_button}"/>
+                        <Button x:Name="BtnBuyItem" Click="BtnBuyItemClick" Content="Купить" Style="{StaticResource base_button}"/>
+                    </StackPanel>
+                </StackPanel>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+    </Grid>
+</Page>

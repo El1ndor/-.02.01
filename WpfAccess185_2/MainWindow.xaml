@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfAccess185_2.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfAccess185_2" mc:Ignorable="d" 
+Style="{StaticResource base_window}" 
+Title="Магазин" 
+Closed="WindowClosed" Closing="WindowClosing" 
+WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{StaticResource additional}"/>
+        <TextBlock Text="{Binding ElementName=MainFrame, Path=Content.Title}" Grid.Row="0" Style="{StaticResource  base_textblock}" 
+TextAlignment="Left" HorizontalAlignment="Left" Margin="100 0"/>
+        <Image Grid.Row="0" Source="Resources/computer.png" HorizontalAlignment="Left" Margin="5"/>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" 
+ContentRendered="MainFrameContentRendered"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal"  HorizontalAlignment="Right" >
+            <Button x:Name="BtnUser" Content="Пользователь" 
+Style="{StaticResource base_button}"  Width="Auto" Click="BtnUserClick"/>
+            <Button x:Name="BtnAdmin" Content="Админ" 
+Style="{StaticResource base_button}"  Width="Auto" Click="BtnAdminClick" />
+            <Button x:Name="BtnCoordinator" Content="Координатор" 
+Style="{StaticResource base_button}" Width="Auto" Click="BtnCoordinatorClick"/>
+            <Button x:Name="BtnBack" Content="Назад" 
+Style="{StaticResource base_button}" Width="Auto"  Click="BtnBackClick"/>
+        </StackPanel>
+    </Grid>
+    </Window> 

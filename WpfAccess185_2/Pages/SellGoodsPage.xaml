@@ -1,0 +1,63 @@
+﻿<Page x:Class="WpfAccess185_2.Pages.SellGoodsPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:WpfAccess185_2.Pages" mc:Ignorable="d" 
+d:DesignHeight="450" d:DesignWidth="800" 
+Title="Продажи" Style="{StaticResource base_page}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+            <TextBlock Text="Выберите товар" 
+Style="{StaticResource base_textblock}" />
+            <ComboBox HorizontalAlignment="Stretch" x:Name="ComboGoods" 
+SelectionChanged="ComboGoodsSelectionChanged" SelectedValuePath="GoodId" 
+DisplayMemberPath="GoodName"/>
+        </StackPanel>
+        <Grid x:Name="GridGood" Width="300" Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="310" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Image Width="240" Grid.Row="0" Stretch="Uniform" 
+HorizontalAlignment="Center" 
+Source="{Binding Path=GetPhoto}" 
+Grid.ColumnSpan="2" Margin="30,0"/>
+            <StackPanel Grid.Row="1" Height="100" Grid.ColumnSpan="2">
+                <TextBlock Padding="3" Height="Auto" 
+Text ="{Binding GoodName}" 
+FontSize="14" 
+TextAlignment="Center" 
+HorizontalAlignment="Stretch" 
+TextWrapping="Wrap" 
+Style="{StaticResource base_textblock}"/>
+                <TextBlock Text="{Binding Price, StringFormat='c', 
+ConverterCulture='ru-RU'}" Height="Auto" 
+VerticalAlignment="Center" 
+HorizontalAlignment="Center" 
+Foreground="{StaticResource akcent}" 
+FontWeight="Bold" FontSize="20" 
+Style="{StaticResource base_textblock}"/>
+            </StackPanel>
+        </Grid>
+        <DataGrid x:Name="DataGridSells" AutoGenerateColumns="False" Grid.Row="1" Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата продажи" 
+Binding="{Binding DateSell, StringFormat='g', 
+ConverterCulture='ru-RU'}"/>
+                <DataGridTextColumn Header="Количество" 
+Binding="{Binding SellCount}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page> 
